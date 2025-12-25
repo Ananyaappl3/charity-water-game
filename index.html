@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Charity Water Game Prototype</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Image assets used as sources for canvas drawing. Hidden so they don't show on the page. -->
+        <img id="background" src="img/sky1.png" alt="background" style="display:none" />
+        <img id="collect_container" src="img/water-can-transparent.png" alt="collect bucket" style="display:none" />
+        <img id="tile" src="img/desert_tileset.png" alt="tile" style="display:none" />
+        <img id="player" src="img/player.png" alt="player" style="display:none" />
+        <header id="header">
+          <img id="site-logo" src="img/cw_logo_horizontal.png" alt="Charity Water" />
+        </header>
+
+        <div id="game-container">
+          <canvas id="main_screen"></canvas>
+
+          <!-- Game over overlay (hidden by default) -->
+          <div id="game-over" style="display:none;">
+            <div id="game-over-content">Game Over</div>
+          </div>
+        </div>
+
+        <footer id="footer">
+          <a href=https://www.charitywater.org/donate/the-spring>Donate to a just cause! Help Charity : Water bring clean water to all!</a>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
